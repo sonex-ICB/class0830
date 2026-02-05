@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar1 {
+            color: azure;
+            height: 25px;
+            background: rgb(21, 20, 20);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            font-size: 24px;
+            font-weight: lighter;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .navbar1 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 13px;
+        }
+
+        .navbar1 .contact {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar2 {
+            color: rgb(21, 20, 20);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        .navbar2 .brand .logo {
+            font-size: 45px;
+            font-weight: bolder;
+            color: rgb(21, 20, 20);
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .navbar2 .icon a {
+            color: rgb(21, 20, 20);
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        /* intro */
+        .intro{
+            height:75vh;
+            background-image:url('img2.jpeg');
+            background-size: cover;
+            background-position:center ;
+            padding:45px 100px;
+        }
+        .intro .label{
+            background: rgb(54, 106, 16);
+            color: #fff;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 10px 20px;
+            display: inline-block;
+            width: 300px;
+        }
+        .intro h4{
+            color: #fff;
+            font-size: 75px;
+            width: 90%;
+            max-width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar1">
+            <div class="contact">
+                <a href="mailto:info@example.com"> <i class="ri-mail-line"></i> info@example.com</a>
+                <a href="tel:+2348031234567"> <i class="ri-phone-fill"></i> +234 803 123 4567</a>
+            </div>
+            <div class="socials">
+                <a href="follow"> <i class="ri-facebook-fill"></i> </a>
+                <a href="follow"> <i class="ri-twitter-x-line"></i> </a>
+                <a href="follow"> <i class="ri-instagram-line"></i> </a>
+                <a href="https://www.youtube.com/@solomonsonex"> <i class="ri-youtube-line"></i></a>
+            </div>
+        </div>
+        <nav class="navbar2">
+            <div class="brand">
+                <span class="logo"> SUNGO </span>
+            </div>
+            <div class="icon">
+                <a href="home"> Home </a>
+                <a href="home"> About </a>
+                <a href="home"> Services </a>
+                <a href="home"> Pages </a>
+                <a href="home"> Blog</a>
+                <a href="home"> Contact </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+                <span class="label"> Lorem, ipsum dolor.</span>
+                <h4> Lorem ipsum dolor sit amet consectetur. </h4>
+        </section>
+    </main>
+</body>
+
+</html>
