@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+         .demo{
+            padding: 4rem ;
+            background: orange;
+            color: #fff;
+            animation:animation_1 5s infinite ;
+         }
+         .tree{
+            width: 10px;
+            height: 10px;
+            border: 5px solid rgba(0, 0, 255, 0.181);
+            margin: 30px;
+            border-top-color:blue;
+            border-radius: 50%;
+            animation: animation_2 1s infinite linear;
+         }
+
+         @keyframes animation_1 {
+            0%{
+               background: red;
+               border-radius: 4px;
+            }
+            20%{background: blue;}
+            40%{background: black;}
+            60%{
+               background: yellow;
+               border-radius: 50px;
+            }
+            80%{background: brown;}
+            100%{background: purple;}
+         }
+
+         @keyframes animation_2 {
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+         }
+
+         .bar-container{
+            background: rgba(0, 0, 255, 0.319);
+            width: 90%;
+            max-width: 500px;
+            border-radius: 10px;
+            overflow: hidden;
+         }
+         .bar{
+            background: blue;
+            width: 100%;
+            padding: 2px;
+            animation: animation_3 4s infinite;
+            margin: 0 auto;
+         }
+
+         @keyframes animation_3 {
+            0%{width: 0%;}
+         }
+
+   </style>
+</head>
+<body>
+   <!--  -->
+   <div class="demo"> Lorem ipsum dolor sit. </div>
+   <div class="tree"></div>
+
+   <div class="bar-container">
+      <div class="bar"> </div>
+   </div>
+
+   <!-- Create 3 animations  -->
+</body>
+</html>
