@@ -1,69 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    Yellow World
-    <h1> Heading 1 </h1>
-    <h2> Heading 2 </h2>
-    <h3> Heading 3 </h3>
-  
-    <!-- para -->
-    <p>New text</p>
-    <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
-    <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
-    <!-- span -->
-    <span>New text element</span>
-    <span>New text element</span>
+    <header>
+        <div class="header container">
+            <h2> Febe's Kitchen </h2>
+            <nav>
+                <a href="home.html"> Home </a>
+                <a href="menu.html"> Menu </a>
+                <a href="about.html"> About </a>
+                <a href="bookatable.html"> Book a Table </a>
+            </nav>
+            <div class="icons">
+                <a href=""><i class="ri-user-line"></i></a>
+                <a href=""> <i class="ri-shopping-cart-2-line"></i> </a>
+                <a href="" class="btn"> order online </a>
+            </div>
 
-    
-    <!-- span is inline  -->
-     <!-- p starts on a new line -->
+            <button type="button" class="navmenu"><i class="ri-menu-line"></i></button>
+        </div>
+    </header>
 
-     <!-- List : ordered and unordered list  -->
-      <ul>
-            <li>TV</li>
-            <li>Radio</li>
-            <li>Freezer</li>
-      </ul>
+    <!-- main > hero -->
+    <main>
+        <section class="" id="hero">
+            <img class="hero-img" src="assets/img/hero-bg.jpg" alt="Hero Image"> </img>
+            <div class="container">
+                <div class="hero-content">
+                    <h3>Fast Food Resturant</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente dolorem aperiam reprehenderit, obcaecati laboriosam labore delectus exercitationem rerum eum nam dignissimos optio temporibus. Aut hic distinctio vero labore quae?</p>
 
-     <ol>
-            <li>Red</li>
-            <li>Blue</li>
-            <li>Yellow</li>
-     </ol>
+                    <a href="" class="btn"> Order Now </a>
+                </div>
+            </div>
+        </section>
 
-     <!--  -->
-     <b> Bold </b>
-     <i>italic </i>
-     <u> underline </u>
-     <s>cancel</s>
-     <sup>sup</sup>
-     <sub>sub</sub>
+        <!-- </ main > hero -->
 
-     <!-- entities  -->
-     <h3> <u>Solomon</u> </h3>
-
-     <p> BUY NOW 200 <s> 5000</s></p>
-     <p> 10 <sup>2-4</sup> - 10 <sup>4-8</sup></p>
-
-     &euro;
-     &copy;
-     &longleftarrow;
-     &Barv;
-     &UpArrowDownArrow;
-     &circlearrowright;
-
-     <!-- 
-        1. create 3  folders and import em
-        2. A new file for a each of the folders 
-     -->
-      
-     <!--  table  -->
-    
+        <!-- main > discount -->
+         <section class="discount">
+            <div class="container">
+                <div class="discount-content">
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="o1-img" src="assets/img/o1.jpg" alt="Discount Image"> </img>
+                        </div>
+                        <div class="card-text">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <h2><span>20%</span> off</h2>
+                            <a href="" class="orderbtn"> Order now </a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-img">
+                            <img class="o1-img" src="assets/img/o2.jpg" alt="Discount Image"> </img>
+                        </div>
+                        <div class="card-text">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <h2><span>15%</span> off</h2>
+                            <a href="" class="orderbtn"> Order now </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+    </main>
 </body>
-</html>
 
+</html>
