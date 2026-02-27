@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // operators : operands
+    let a = 10;
+    a = 20;
+    a = a + 10;
+
+    a += 10
+    a -= 5
+    a = a - 20
+    console.log(a)
+
+    // comparison operators
+    // It can be used to show the value of a variable within a range 
+    a=20;
+    b=30;
+
+    a<b 
+    a>b
+    a<=b
+    a>=b
+    a==b
+    a===b
+
+    
+    "10"==10
+    "10"===10
+    "10"==="10"
+    balance=12
+    w=2
+    if(balance>w){
+        document.writeln("You can buy")
+    }else{
+        document.writeln("You cannot buy")
+    }
+
+    // logical operators and(&&), or(||), not(!)
+    a = 10>2 && 10<5 // False
+    a = 10>2 || 10<5 // True
+    a = !10>2 // False
+
+    // typeof operators
+    document.writeln (typeof a) // boolean
+
+    // ternary operator
+    temp = 30
+    response = temp > 30 ? "Hot" : "Cold"
+
+    age = 20
+    can_vote = age > 18 ? "Yes" : "No"
+
+    // methods
+    car = {
+        brand: "Toyota",
+        model: "Camry",
+        year: 2020,
+        color: "Silver",
+        car_brake: function(){
+        document.writeln("Car is braking")
+    }
+    }
+
+    
+    car.car_brake()
+    document.writeln()
+
+    // string methods - it allows you to manipulate and work with text (string) data in JavaScript.
+    let userName = "Febechukwu"
+    // strings have different built in methods that can be used to manipulate and work with string data
+    // 1.to get the first character of the string we can use charAt() method
+    userName.charAt(0) // F
+    userName.charAt(1) // e
+    userName.charAt(2) // b
+    userName.charAt(3) // e
+
+    console.log(userName.charAt(0))
+    document.writeln(userName.charAt(0)) // F
+    document.writeln(userName[0]) // e
+
+    // 2.indexOf() method - it returns the index of the first occurrence of a characyer or specified value in a string
+    userName.indexOf("e") // 1
+    userName.indexOf("b") // 2  
+
+    console.log(userName.indexOf("e"))
+
+    // 3.lastIndexOf() method - it returns the index of the last occurrence of a character or specified value in a string
+    userName.lastIndexOf("e") // 3
+
+    console.log(userName.lastIndexOf("e"))
+    a = userName.indexOf("e") // 
+    document.writeln(userName.charAt(a)) // e
+
+    // length property - it returns the number of characters in a string. it ia not a method but it is very similar
+    console.log(userName.length) // 10
+
+    // 4.trim() method - it removes whitespace from both ends of a string
+    // reasign the userName
+    let user_Name = "  Febechukwu  "
+    userName = user_Name.trim();
+
+    console.log(userName) // "Febechukwu" 
+
+    // 5.toUpperCase() method - it converts a string to uppercase letters
+    userName = userName.toUpperCase()
+
+    console.log(userName) // "FEBECHUKWU"
+
+    // 6.toLowerCase() method - it converts a string to lowercase letters
+    userName = userName.toLowerCase()
+
+    console.log(userName) // "febechukwu"
+
+    // 7.repeat() method - it repeats a string
+    userName = userName.repeat(3)
+
+    console.log(userName) // "febechukwufebechukwufebechukwu"
+    document.writeln(userName) // "febechukwufebechukwufebechukwu"
+
+    // 8.startsWith() method - it checks if a string starts with a specified value and returns true or false
+    let result = userName.startsWith("f") // true
+
+    console.log(result) // true
+
+    if(result){
+        document.writeln("The string starts with f")
+
+    }else{
+        document.writeln("The string does not start with f")
+    }
+    p = "+234873766"
+    document.writeln(p.indexOf("+")==0)
+    document.writeln(0==1) 
+    document.writeln(p.startsWith("3")) // true
+</script>
+</html>
