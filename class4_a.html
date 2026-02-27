@@ -21,52 +21,80 @@
 
     //add and remove
     push()//adds to the end
+    array_1=[1]; array_1.push(2); // array_1 ⇒ [1,2]
     pop()//removes from the end
-    shift()//adds to the front
-    unshift()//removes from the front
+    array_2=[2,3]; array_2.pop(); // returns 3, array_2⇒[2]
+    shift()//removes to the front
+    array_3=[3,4]; array_3.shift(); // returns 3, array_3⇒[4]
+    unshift()//adds from the front
+    array_4=[4,5]; array_4.unshift(3); // array_4⇒[3,4,5]
 
     splice()// adds and removes elements at specific points
+    array_5=[1,2,4]; array_5.splice(2,0,3); // array_5⇒[1,2,3,4]
 
     //order/fill
     sort()//arranges elements
+    array_6=[3,1,2]; array_6.sort(); // array_6⇒[1,2,3]
     reverse()//flips the order of the array
+    array_6.reverse(); // array_6⇒[3,2,1]
     fill()//replaces elements with static values
+    array_6.fill(0); // array_6⇒[0,0,0]
 
     //Non-Mutating Methods (Return a New Array) 
     //manipulation
     concat()//meges arrays into a single one
+    array_2=[2]; array_2.concat([3,4]); // [2,3,4]
     slice(start, end)//retirns a ashadow copy of the selected portion of the array
+    array_7=[1,2,3,4]; array_7.slice(1,3); // [2,3]
     includes(value, fromIndex)//checks if an array has a certain value and returns true or false
+    array_7.includes(2); // true
 
     //iteration methods
     forEach(callbackFn)//Executes a provided function once for each array element, but does not return a new array
+    array_8=[1,2]; array_8.forEach(n=>console.log(n)); // logs 1 and 2
 
     //searching methods
     indexOf(item, from)// Returns the first index at which a given element can be found, or -1 if it is not present.
+    array_9=[1,2,3]; array_9.indexOf(2); // 1
     find(callbackFn)// Returns the value of the first element in the array that satisfies the provided testing function; otherwise, returns undefined.
+    array_10=[1,2,3]; array_10.find(n=>n%2); // 1 (first odd number)
 
 
 
     //number and math method
     toFixed(digits)// Formats a number using a fixed number of decimal places and returns a string.
+    (1.2345).toFixed(2); // "1.23"
     toPrecision(length)// Formats a number to a specified total length (number of significant digits) and returns a string.
+    (1.2345).toPrecision(3); // "1.23"
     toString(radix)// Converts a number to a string in a specified base (radix, e.g., 2 for binary, 10 for decimal).
+    (10).toString(2); // "1010"
     Number.isNaN(value)// Checks if a value is NaN (Not a Number) and belongs to the Number type.
+    Number.isNaN(NaN); // true
     Number.isInteger(value)// Checks if a value is an integer.
+    Number.isInteger(10); // true
     Math.round(x)// Rounds a number to the nearest integer.
+    Math.round(1.5); // 2
     Math.abs(x)// Returns the absolute (positive) value of a number.
+    Math.abs(-5); // 5
     ath.sqrt(x)// Returns the square root of a number.
+    Math.sqrt(16); // 4
     Math.sin(x)//sine trigonometric function
+    Math.sin(Math.PI / 2); // 1
     Math.cos(x)//cosine trigonometric function
+    Math.cos(0); // 1
     Math.tan(x)//tangent trigonometric function
+    Math.tan(Math.PI / 4); // 1
 
 
 
     //object methods
 
     Object.keys()//returns property names
+    const obj = {a: 1, b: 2}; Object.keys(obj); // ["a", "b"]
     Object.values()//returns property values
+    Object.values(obj); // [1, 2]
     Object.assign()//copies properties
+    const target = {a: 1}; const source = {b: 2}; Object.assign(target, source); // target ⇒ {a: 1, b: 2}
 
 
     const person = {
