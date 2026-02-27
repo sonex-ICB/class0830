@@ -20,71 +20,102 @@
     //Mutating Methods (Modify the Original Array)
 
     //add and remove
-    push()//adds to the end
-    pop()//removes from the end
-    shift()//adds to the front
-    unshift()//removes from the front
-
-    splice()// adds and removes elements at specific points
-
+    let myarray = ['Purple']
+    myarray = []
+    myarray.push('red','blue')//adds to the end
+    document.writeln(myarray)
+    document.writeln("<br>")
+    // pop()//removes from the end
+    myarray.pop()
+    // document.writeln(myarray.pop())
+    document.writeln("<br>")
+    document.writeln(myarray)
+    myarray.push('Yellow','Cyan','Ray','Almon','Pink')
+    myarray.shift()//removes from the front
+    document.writeln("<br>")
+    document.writeln(myarray)
+    myarray.unshift('Black')//adds to the front
+    document.writeln("<br>")
+    document.writeln(myarray)
+    
+    myarray = ['a','b','c','d','e']
+    myarray.splice(3,2,"A",)// adds and removes elements at specific points
+    document.writeln("<br>")
+    document.writeln(myarray)
+    
     //order/fill
-    sort()//arranges elements
-    reverse()//flips the order of the array
-    fill()//replaces elements with static values
+    // sort()//arranges elements
+    array_6=[3,1,2]; 
+    array_6.sort(); // array_6⇒[1,2,3]
+    document.writeln("<br>")
+    document.writeln(array_6)
+    array_6=[3,1,2]; 
+    document.writeln("<br>")
+    document.writeln(array_6.sort().reverse())
+    document.writeln(('welcome').toUpperCase().indexOf('E'))
+    // reverse()//flips the order of the array
+    array_6.reverse(); // array_6⇒[3,2,1]
+    // fill()//replaces elements with static values
+    array_6 = ['red',,,,,,,,,,,,,,,,,,,]
+    array_6.fill(true); // array_6⇒[0,0,0]
+    document.writeln("<br>")
+    document.writeln(array_6)
 
     //Non-Mutating Methods (Return a New Array) 
     //manipulation
-    concat()//meges arrays into a single one
-    slice(start, end)//retirns a ashadow copy of the selected portion of the array
-    includes(value, fromIndex)//checks if an array has a certain value and returns true or false
+    str = 'me'
+    str1  = 'you'
+    document.writeln(str + str1)
+    document.writeln(10 + "10")
+    document.writeln(10 * "10")
+    document.writeln(str.concat(str1))
+    
+    array = [0,1,23,4,4,4]
+    document.writeln(array.includes(10))
 
-    //iteration methods
-    forEach(callbackFn)//Executes a provided function once for each array element, but does not return a new array
 
-    //searching methods
-    indexOf(item, from)// Returns the first index at which a given element can be found, or -1 if it is not present.
-    find(callbackFn)// Returns the value of the first element in the array that satisfies the provided testing function; otherwise, returns undefined.
-
-
+   array.forEach(a => {
+        document.writeln("<br>" + a)
+   });
+ 
 
     //number and math method
-    toFixed(digits)// Formats a number using a fixed number of decimal places and returns a string.
+    // toFixed(digits)// Formats a number using a fixed number of decimal places and returns a string.
+    (1.2345).toFixed(); // "1.23"
     toPrecision(length)// Formats a number to a specified total length (number of significant digits) and returns a string.
-    toString(radix)// Converts a number to a string in a specified base (radix, e.g., 2 for binary, 10 for decimal).
+    (1.2345).toPrecision(3); // "1.23"
+    // toString(radix)// Converts a number to a string in a specified base (radix, e.g., 2 for binary, 10 for decimal).
+    (10).toString(2); // "1010"
     Number.isNaN(value)// Checks if a value is NaN (Not a Number) and belongs to the Number type.
+    Number.isNaN(NaN); // true
     Number.isInteger(value)// Checks if a value is an integer.
+    Number.isInteger(10); // true
     Math.round(x)// Rounds a number to the nearest integer.
+    Math.round(1.5); // 2
     Math.abs(x)// Returns the absolute (positive) value of a number.
+    Math.abs(-5); // 5
     ath.sqrt(x)// Returns the square root of a number.
+    Math.sqrt(16); // 4
     Math.sin(x)//sine trigonometric function
+    Math.sin(Math.PI / 2); // 1
     Math.cos(x)//cosine trigonometric function
+    Math.cos(0); // 1
     Math.tan(x)//tangent trigonometric function
+    Math.tan(Math.PI / 4); // 1
 
 
 
     //object methods
 
     Object.keys()//returns property names
+    const obj = {a: 1, b: 2}; Object.keys(obj); // ["a", "b"]
     Object.values()//returns property values
+    Object.values(obj); // [1, 2]
     Object.assign()//copies properties
+    const target = {a: 1}; const source = {b: 2}; Object.assign(target, source); // target ⇒ {a: 1, b: 2}
 
+ 
 
-    const person = {
-        firstName: "John",
-        lastName: "James",
-        greet: function () {
-            return `Hello, my name is ${this.firstName} ${this.lastName}`;
-        }
-    };
-    console.log(person.greet()); // Hello, my name is John James
-
-
-    //srting methods
-
-    String()// converts other data types to strings
-    toLowerCase()// to lowercase
-    toUppercase()//to uppercase
-    concat()//joins strings together
-    slice()//cuts out a section of a string
+   
 </script>
 </html>
