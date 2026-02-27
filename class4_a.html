@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //1.Operators(assignment opreators  comparison, arithmethic, etc)
+
+    //2. Methods(array methods, number&math methods, objects methods, string method)
+
+
+
+    //array method// are used to create, manipulate, transform and search arrays
+
+    //Mutating Methods (Modify the Original Array)
+
+    //add and remove
+    push()//adds to the end
+    pop()//removes from the end
+    shift()//adds to the front
+    unshift()//removes from the front
+
+    splice()// adds and removes elements at specific points
+
+    //order/fill
+    sort()//arranges elements
+    reverse()//flips the order of the array
+    fill()//replaces elements with static values
+
+    //Non-Mutating Methods (Return a New Array) 
+    //manipulation
+    concat()//meges arrays into a single one
+    slice(start, end)//retirns a ashadow copy of the selected portion of the array
+    includes(value, fromIndex)//checks if an array has a certain value and returns true or false
+
+    //iteration methods
+    forEach(callbackFn)//Executes a provided function once for each array element, but does not return a new array
+
+    //searching methods
+    indexOf(item, from)// Returns the first index at which a given element can be found, or -1 if it is not present.
+    find(callbackFn)// Returns the value of the first element in the array that satisfies the provided testing function; otherwise, returns undefined.
+
+
+
+    //number and math method
+    toFixed(digits)// Formats a number using a fixed number of decimal places and returns a string.
+    toPrecision(length)// Formats a number to a specified total length (number of significant digits) and returns a string.
+    toString(radix)// Converts a number to a string in a specified base (radix, e.g., 2 for binary, 10 for decimal).
+    Number.isNaN(value)// Checks if a value is NaN (Not a Number) and belongs to the Number type.
+    Number.isInteger(value)// Checks if a value is an integer.
+    Math.round(x)// Rounds a number to the nearest integer.
+    Math.abs(x)// Returns the absolute (positive) value of a number.
+    ath.sqrt(x)// Returns the square root of a number.
+    Math.sin(x)//sine trigonometric function
+    Math.cos(x)//cosine trigonometric function
+    Math.tan(x)//tangent trigonometric function
+
+
+
+    //object methods
+
+    Object.keys()//returns property names
+    Object.values()//returns property values
+    Object.assign()//copies properties
+
+
+    const person = {
+        firstName: "John",
+        lastName: "James",
+        greet: function () {
+            return `Hello, my name is ${this.firstName} ${this.lastName}`;
+        }
+    };
+    console.log(person.greet()); // Hello, my name is John James
+
+
+    //srting methods
+
+    String()// converts other data types to strings
+    toLowerCase()// to lowercase
+    toUppercase()//to uppercase
+    concat()//joins strings together
+    slice()//cuts out a section of a string
+</script>
+</html>
