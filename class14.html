@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+   sum(10,700)
+   // function - 
+   function sum(a,b){
+      document.writeln(a+b)
+   }
+   sum(10,7)
+   
+   // return 
+   function sum2(x,y){
+      return x+y
+   }
+   c = sum2(12,6) // 12+6
+   document.writeln(c)
+   console.log(c)
+
+   let myvar = function(){
+      document.writeln('A  var function ')
+   }
+   myvar()
+
+   let mynewvar = ()=>{
+      document.writeln('An arrow function')
+   }
+   mynewvar()
+
+  
+
+
+   sum(300,300)
+
+   // loops for, w'ile, do w'ile
+   for(let i=0; i<10; i++){
+      document.writeln("Welcome")
+      document.writeln(i)
+   }
+
+   // i = 0;
+   // while(i<10){
+   //    document.writeln(i)
+   //    i++;
+   // }
+
+   // i = 0;
+   // do{
+   //    document.writeln('Do w loop')
+   //    i++;
+   // }while(i<10)
+
+   // for
+   list = ['Red','blue','Cyan','Yellow','Purple']
+
+   for(i=0;i<4;i++){
+      document.writeln(list[i])
+   }
+
+   list.forEach(l => {
+      document.writeln(l)
+   });
+
+   //conditions if, else if else
+
+   a = true || false
+   c = 10>4 // true
+   c = 10<4 // false
+
+   if(3>10){
+      document.writeln('3 is > 10')
+   }else{
+      document.writeln('3 is < 10')
+   }
+
+   time = 18
+   if(time<12){
+      document.writeln('Mornin')
+   }
+   else if(time<16){
+      document.writeln('Afternoon')
+   }else{
+      document.writeln('Evenin')
+   }
+
+   // Class work
+   // write a  pro 
+      // 1. returns true is a number is between 1-10 else invalid
+      // 2. find area of a circle, if radius is more t'an 0
+      // 3. Print de last 3 items in  an array 
+
+
+    //3. 
+    list = ['red','blue','Yellow','purple','Cyan','Tomato','More','week'];
+    for(i=list.length-3; i<list.length; i++){
+      document.writeln(list[i])
+    }
+ 
+    //2 
+    function areaofc(r){
+      if(r>0){
+         area = 22/7 * (r*r)
+      }else{
+         area = "Invalid"
+      }
+      document.writeln(area);
+    }
+    areaofc(3)
+
+    // 1. Operators - 
+    a = 34>45
+    
+    //2. Met'ods - array, number and Mat', ob'ects, strin 
+</script>
+</html>

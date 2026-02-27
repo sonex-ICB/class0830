@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+   // array List
+   let mylist = [12, 56, 20];
+   document.writeln(mylist)
+   document.writeln(mylist[0])
+
+   let courses = [
+      'Tailwind',
+      ['CSS', 'Bootstrap', 'Script'],
+      ['Py', 'CPP']
+   ]
+
+   document.writeln(courses[0]) // tailwind
+   document.writeln(courses[1][2]) // Script
+   document.writeln(courses[2][0]) // Py
+   document.writeln(courses[1][1]) // bootstrap
+
+   // Object key:value variables 
+   let laptop = {
+      name: "Dell",
+      model: "Dell XPS",
+      year: 2022,
+      os: "Windows",
+      amt: 3000
+   }
+   console.log(laptop)
+   document.writeln(laptop)
+   document.writeln(laptop.model)
+   document.writeln(laptop.os)
+   // product : name, amt, qty
+
+   let prod = {
+      name: "play station",
+      amt: 500,
+      qty: 2
+   }
+   prod2 = {
+      name: 'lull',
+      amt: 59,
+      qty: 3
+   }
+
+   prod3 = {
+      name: "Tesla Car",
+      amt: 80,
+      qty: 6
+   }
+   products = [
+      {
+         name: "play station",
+         amt: 500,
+         qty: 2
+      },
+      {
+         name: 'lull',
+         amt: 59,
+         qty: 3
+      },
+      {
+         name: "Tesla Car",
+         amt: 80,
+         qty: 6
+      }
+   ]
+
+   document.writeln(products[1].qty)
+   document.writeln(products[0].name)
+   document.writeln(products[1].name)
+   document.writeln(products[2].name)
+
+   person = {
+      name: "Solomon",
+      courses: ["CSS", "PY"],
+      addr: {
+         street_no: 12,
+         city: "Wuse",
+         state: "FCT"
+      }
+   }
+   document.writeln(person.name)
+   document.writeln(person.courses[1]) // py
+   document.writeln(person.addr.street_no) // py
+   document.writeln(person.addr.city) // py
+   document.writeln(person.addr.state) // py
+
+   // function - set of instr to follow, reusable block of code
+   
+   function my_first_function(){
+      document.writeln("my first function");
+   }
+   my_first_function()
+   my_first_function()
+   
+   function sum(a,b){
+      document.writeln(a+b)
+   }
+   sum(20,400)
+   sum(2,9)
+</script>
+
+</html>
+<!-- 
+   
+
+-->
