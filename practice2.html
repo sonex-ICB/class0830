@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f6f9;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #2563eb, #4f46e5);
+            color: white;
+        }
+
+        .products {
+            padding: 40px 8%;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            /* transition: 0.3s; */
+        }
+
+        /* .card:hover {
+            transform: translateY(-5px);
+        } */
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            padding-left: 18px;
+        }
+
+        .price {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background: #2563eb;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>FebeTech Store</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Innovative Products</h2>
+        <p>Quality devices built for performance and style.</p>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="productContainer"></div>
+    </section>
+
+    <footer>
+        © 2026 FebeTech. All Rights Reserved.
+    </footer>
+
+
+</body>
+<script>
+    // Product Data (JS controls everything here)
+    const products = [
+        {
+            id: 1,
+            name: "Smart Watch X",
+            features: ["Heart Rate Monitor", "Water Resistant", "7-Day Battery"],
+            price: 199,
+            description: "Track your fitness and stay connected on the go."
+        },
+        {
+            id: 2,
+            name: "Wireless Headphones Pro",
+            features: ["Noise Cancellation", "Bluetooth 5.3", "30-Hour Playtime"],
+            price: 149,
+            description: "Immersive sound with premium comfort."
+        },
+        {
+            id: 3,
+            name: "Smartphone Ultra",
+            features: ["120Hz AMOLED", "Triple Camera", "Fast Charging"],
+            price: 699,
+            description: "Powerful performance with stunning display."
+        }
+    ];
+
+    // Select container
+    const container = document.getElementById("productContainer");
+
+    // Render products dynamically
+    products.forEach(product => {
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML = `
+                <h3>${product.name}</h3>
+                <p>${product.description}</p>
+                <ul>
+                    ${product.features.map(feature => `<li>${feature}</li>`).join("")}
+                </ul>
+                <div class="price">$${product.price}</div>
+                <button onclick="buyProduct(${product.id})">Buy Now</button>
+            `;
+
+        container.appendChild(card);
+    });
+
+    // Buy function
+    function buyProduct(id) {
+        const product = products.find(p => p.id === id);
+        alert("You selected: " + product.name);
+    }
+</script>
+
+</html>
