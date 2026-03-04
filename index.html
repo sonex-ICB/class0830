@@ -5,76 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <div class="header container">
-            <h2> Febe's Kitchen </h2>
-            <nav>
-                <a href="home.html"> Home </a>
-                <a href="menu.html"> Menu </a>
-                <a href="about.html"> About </a>
-                <a href="bookatable.html"> Book a Table </a>
-            </nav>
-            <div class="icons">
-                <a href=""><i class="ri-user-line"></i></a>
-                <a href=""> <i class="ri-shopping-cart-2-line"></i> </a>
-                <a href="" class="btn"> order online </a>
-            </div>
+    <div class="alert_holder">
+        <!-- <div class="alert alert-primary mx-3 my-3">
+            <div class="date fw-semibold">12/1/2026</div>
+            <div class="title my-2 fw-bolder">Order ready</div>
+            <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, itaque. Eligendi,
+                mollitia.
+            </p>
+        </div> -->
+    </div>
 
-            <button type="button" class="navmenu"><i class="ri-menu-line"></i></button>
-        </div>
-    </header>
-
-    <!-- main > hero -->
-    <main>
-        <section class="" id="hero">
-            <img class="hero-img" src="assets/img/hero-bg.jpg" alt="Hero Image"> </img>
-            <div class="container">
-                <div class="hero-content">
-                    <h3>Fast Food Resturant</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sapiente dolorem aperiam reprehenderit, obcaecati laboriosam labore delectus exercitationem rerum eum nam dignissimos optio temporibus. Aut hic distinctio vero labore quae?</p>
-
-                    <a href="" class="btn"> Order Now </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- </ main > hero -->
-
-        <!-- main > discount -->
-         <section class="discount">
-            <div class="container">
-                <div class="discount-content">
-                    <div class="card">
-                        <div class="card-img">
-                            <img class="o1-img" src="assets/img/o1.jpg" alt="Discount Image"> </img>
-                        </div>
-                        <div class="card-text">
-                            <h3>Lorem, ipsum dolor.</h3>
-                            <h2><span>20%</span> off</h2>
-                            <a href="" class="orderbtn"> Order now </a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img">
-                            <img class="o1-img" src="assets/img/o2.jpg" alt="Discount Image"> </img>
-                        </div>
-                        <div class="card-text">
-                            <h3>Lorem, ipsum dolor.</h3>
-                            <h2><span>15%</span> off</h2>
-                            <a href="" class="orderbtn"> Order now </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-         </section>
-    </main>
 </body>
+<script>
+    const notifications = [
+        {
+            id: 1,
+            text: "Order Ready",
+            date: "10 / 2 / 2026",
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, repellendus?",
+            is_read: true
+        },
+        {
+            id: 2,
+            text: "Reminder",
+            date: "20 / 1 / 2026",
+            description:"Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            is_read: false
+        },
+        {
+            id: 3,
+            text: "App Installed",
+            date: "13 / 2 / 2026",
+            description:"Lorem ipsum dolor sit amet.",
+            is_read: true
+        },
+        {
+            id: 4,
+            text: "Missed Call",
+            date: "1 / 3 / 2026",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum maiores nobis a numquam possimus placeat modi non distinctio dolor cum.",
+            is_read: false
+        },
+    ]
+
+    let alert = ""
+    notifications.forEach(p => {
+        const alertClass = p.is_read ? 'alert-success' : 'alert-danger';
+        alert +=
+            `<div class="alert ${alertClass} mx-3 my-3">
+            <div class="date fw-semibold">${p.date}</div>
+            <div class="title my-2 fw-bolder">${p.text}</div>
+            <p class="description">${p.description}</p>
+        </div>
+        `;
+    });
+    document.querySelector('.alert_holder').innerHTML = alert;
+
+
+</script>
 
 </html>
